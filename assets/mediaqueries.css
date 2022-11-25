@@ -113,6 +113,27 @@
     }
 
 
+    /* Obras */
+    #obra1, #obra2, #obra3, #obra4 
+    {
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+      
+    }  
+
+    .obra1-img, .obra2-img, .obra3-img, .obra4-img 
+    {
+      max-width: 80%;
+      display: flex;
+      flex-direction:initial;
+      align-items: center;
+    }  
+
     footer  {
       margin-left: 10%;
       width: 85%;
@@ -269,7 +290,35 @@
       width: 100%;
     }
   
-   
+
+
+
+    /* OBRAS*/
+    
+    #obra1, #obra2, #obra3, #obra4 
+    {
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-width: 1000px;
+      
+    }  
+
+    .obra1-img, .obra2-img, .obra3-img, .obra4-img 
+    {
+     
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      align-items: center;
+    }  
+
+
     footer  {
       margin-left: 6%;
       width: 90%;
