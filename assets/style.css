@@ -1184,32 +1184,29 @@ encima de un label o toggle*/
   }
     .obra-info {
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      gap: 40px;
-      width: 50%; /*porcentaje del contenedor*/
+      align-items: center;
+      gap: 50px;
+      width: 65%; /*porcentaje del contenedor*/
     }
     .obra-info h2 {
       background: linear-gradient(to left, #d4b815, var(--text-negrita), rgb(143, 5, 5));
-      font-size: 5px;
-      width: 90%; /*porcentaje de su contenedor*/
-      min-width: 150px; /*lo minimo de la pantalla*/
-      font-weight: 60px; /* Relleno */
+      font-weight: 30px; /* Relleno */
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
-      font-size: 50px;
-      font-weight: 400; 
+      font-size: 40px;
+      font-weight: 300; 
       margin-top: 20px;
       margin-bottom: -25px;
-      text-align: center;
+      text-align:center;
 
     }
     
     .obra-info h3 {
       background: linear-gradient(to left, #bbaa13, var(--text-negrita), var(--fire));
       font-size: 2px;
-      width: 90%; /*porcentaje de su contenedor*/
-      min-width: 10px; /*lo minimo de la pantalla*/
       font-weight: 30; /* Relleno */
       color: transparent;
       background-clip: text;
@@ -1223,7 +1220,6 @@ encima de un label o toggle*/
     .obra-info p {
       font-size: 15px;
       width: 90%; 
-      /* tamano letra */
       color: rgb(244, 224, 191);
       text-align: justify;
       margin-bottom: -20px;
@@ -1233,11 +1229,7 @@ encima de un label o toggle*/
       gap: 15px;
       margin-left: 0%;     
     }
-    
-    .obra-info p > span {
-      font-weight: 800;
-    }
-    
+        
   .obra-img {
     width: 420px;
     background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
@@ -1262,7 +1254,6 @@ encima de un label o toggle*/
     gap: 10px;
   }
 
-  
 
   /* Botones ________________________________________________________________________*/
     .categoryButton {
