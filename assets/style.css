@@ -1172,28 +1172,23 @@ encima de un label o toggle*/
 
 
  /* OBRAS _______________________________________________________________________*/
-  #obra1, #obra2, #obra3, #obra4 {
+  #obras {
     margin-top: 10px;
     margin-bottom: 40px;
-    padding: 40px;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
+    gap: 15px;
+  
   }
-    .obra1-info,
-    .obra2-info,
-    .obra3-info,
-    .obra4-info {
+    .obra-info {
       display: flex;
       flex-direction: column;
       gap: 40px;
       width: 50%; /*porcentaje del contenedor*/
     }
-    .obra1-info h2,
-    .obra2-info h2,
-    .obra3-info h2,
-    .obra4-info h2 {
+    .obra-info h2 {
       background: linear-gradient(to left, #d4b815, var(--text-negrita), rgb(143, 5, 5));
       font-size: 5px;
       width: 90%; /*porcentaje de su contenedor*/
@@ -1206,132 +1201,68 @@ encima de un label o toggle*/
       font-weight: 400; 
       margin-top: 20px;
       margin-bottom: -25px;
+      text-align: center;
+
     }
     
-    .obra1-info h3,
-    .obra2-info h3,
-    .obra3-info h3,
-    .obra4-info h3 {
+    .obra-info h3 {
       background: linear-gradient(to left, #bbaa13, var(--text-negrita), var(--fire));
       font-size: 2px;
       width: 90%; /*porcentaje de su contenedor*/
-      min-width: 100px; /*lo minimo de la pantalla*/
+      min-width: 10px; /*lo minimo de la pantalla*/
       font-weight: 30; /* Relleno */
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
       font-size: 32px;
       font-weight: 400; 
-      margin-bottom: -2px;
+      margin-bottom: 0px;
+      text-align: center;
+     
     }
-    .obra1-info p,
-    .obra2-info p,
-    .obra3-info p,
-    .obra4-info p {
+    .obra-info p {
       font-size: 15px;
       width: 90%; 
       /* tamano letra */
       color: rgb(244, 224, 191);
       text-align: justify;
       margin-bottom: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      margin-left: 0%;     
     }
     
-    .obra1-info p > span,
-    .obra2-info p > span,
-    .obra3-info p > span,
-    .obra4-info p > span {
+    .obra-info p > span {
       font-weight: 800;
     }
+    
+  .obra-img {
+    width: 420px;
+    background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
+    padding: 10px;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px #75370d,
+             0px 0px 10px #df6719;
+    margin-bottom: 100px;
+
+  }
+  .obra-img-i {
+    overflow: hidden;
+    width: 400px;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
 
   
-    
-  .obra1-img {
-    width: 420px;
-    background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
-    padding: 10px;
-    border-radius: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0px 0px 10px #75370d,
-             0px 0px 10px #df6719;
-  }
-  .obra1-img-i {
-    overflow: hidden;
-    width: 400px;
-    border-radius: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .obra2-img {
-    width: 420px;
-    background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
-    padding: 10px;
-    border-radius: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0px 0px 10px #75370d,
-             0px 0px 10px #df6719;
-  }
-  .obra2-img-i {
-    overflow: hidden;
-    width: 400px;
-    border-radius: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .obra3-img {
-    width: 420px;
-    background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
-    padding: 10px;
-    border-radius: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0px 0px 10px #75370d,
-             0px 0px 10px #df6719;
-  }
-  .obra3-img-i {
-    overflow: hidden;
-    width: 400px;
-    border-radius: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .obra4-img {
-    width: 420px;
-    background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
-    padding: 10px;
-    border-radius: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0px 0px 10px #75370d,
-             0px 0px 10px #df6719;
-  }
-  .obra4-img-i {
-    overflow: hidden;
-    width: 400px;
-    border-radius: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
 
   /* Botones ________________________________________________________________________*/
     .categoryButton {
@@ -1365,13 +1296,15 @@ footer {
   margin-right: 0%;
   max-width: 1200px;
   margin-left: 0%;
-  margin-top: 6%;
+  margin-top: 10%;
   background: var(--background 1%);
   color: var(--text-wheat);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-margin-bottom: 20%;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .footer-container {
@@ -1379,11 +1312,14 @@ margin-bottom: 20%;
    background: var(--background 30%);
   color: var(--text-wheat);
   display: flex;
-  margin-left: 30%;
+  margin-left: 10%;
   flex-direction: row;
   flex-wrap: wrap ;
   align-items: center;
-  gap: 20%;
+  gap: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
 }
 
 .footer-links h3 {
@@ -1394,11 +1330,10 @@ margin-bottom: 20%;
   background-clip: text;
   -webkit-background-clip: text;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .footer-container img {
   width: 50px;
-  margin-top: 5%;
    }
 
 footer li, 
@@ -1413,7 +1348,7 @@ footer li,
 }
 
 .imgli {
-  gap: 40px;
+  gap: 60px;
 }
 
 /*LOGO */
@@ -1427,6 +1362,7 @@ footer li,
   border-radius: 100px;
   box-shadow: 0px 0px 25px  rgb(153, 125, 11),
              0px 0px 25px rgb(231, 231, 179);
+             margin-top: 5%;
   }
   .footer-logo img {
     width: 85px;
@@ -1447,8 +1383,8 @@ footer p {
   font-size: 14px;
   display: flex;
   justify-content:center;
-  margin-left: 25%;
-  margin-top: 10%;
+  margin-left: 0%;
+  margin-top: 5%;
  
 }
 footer span {
